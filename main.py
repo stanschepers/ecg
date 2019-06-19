@@ -30,7 +30,7 @@ output = OutputClassification("ECG Classification", "random_forest", output_dir=
 output.add_info("n_processors", 12)
 output.add_info("n_folds", n_folds)
 
-csv = pd.read_csv("ecg2.csv", index_col=None)
+csv = pd.read_csv("ecg.csv", index_col=None)
 
 X, y = csv.drop("abnormal", axis=1), csv["abnormal"]
 
