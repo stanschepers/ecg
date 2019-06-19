@@ -42,6 +42,9 @@ class DictQuery(dict):
 
 
 class OutputClassification:
+    """
+    A class for writing metrics and data of a classifier model to a JSON.
+    """
     def __init__(self, name, class_type, output_dir=None, file_dir=None, random_state="", test_size=""):
         self.output = DictQuery({
             "info": {
