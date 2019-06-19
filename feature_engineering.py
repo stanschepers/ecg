@@ -97,8 +97,6 @@ class FeatureExtraction:
                                         feature_list=features_list)  # add all general data
         try:
             features_list.append((sampen(heartbeats[0]), "sampen"))
-            # features_list.append((lyap_e(ecg_signal), "lyap_e"))
-            # features_list.append((lyap_r(ecg_signal), "lyap_r"))
         except Exception:
             raise BadFeatureGenerationException()
 
@@ -114,7 +112,6 @@ class FeatureExtraction:
             #                              if working_data is None and measures is None else working_data, measures
             bpm = measures["bpm"]
             if bpm > 300 or np.isnan(bpm):
-                # hp.plotter(working_data, measures)
                 raise BadFeatureGenerationException()
             feature_list.append((bpm, "bpm"))
 
@@ -134,8 +131,8 @@ class FeatureExtraction:
         try:
             # heartbeats = get_heartbeats(ecg_signal, hz) if heartbeats is None else heartbeats
             dwt_ = pywt.wavedec(heartbeats[0], "db4", level=4, mode="periodic")[0]
-            for i in range(len(dwt_)):
-                features_list.append((dwt_[i], "dwt_" + str(i)))
+            # for i in range(len(dwt_)):
+            #     features_list.append((dwt_[i], "dwt_" + str(i)))
             for (name, stat) in calculate_stats_signal(dwt_, name="wavelet").items():
                 features_list.append((stat, name))
         except Exception as e:
@@ -228,4 +225,4 @@ if __name__ == '__main__':
     X = pd.DataFrame(X)
     X.columns = features_names
 
-    X.to_csv("ecg2.csv", index=False)
+    X.to_csv("ecg.csv", index=False)

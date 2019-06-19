@@ -21,7 +21,7 @@ Voor een 12 lead ECG worden er 10 electroden geplaats op de borstkas van de pati
 1. Sinus(SA)knoop
 2. AV knoop
 
-De P top representeert de contractie van de voorkamers. Deze start in de AV knoop. Vervolgens heb je de contractie van de (sterkere) kamers.  Omdat moment gebeurd ook de relaxatie van de voorkamers. De grootte van de vector die de de constractie van de kamers voorsteld is echter groter dus deze valt niet op op de ECG. Tenslotte komt de T-top. Deze duidt op de relaxatie van de kamers.  Een voorbeeld golf en de naamgeving zijn onderaan in de afbeelding te vinden. 
+De P top representeert de contractie van de voorkamers. Deze start in de sinusknoop. Vervolgens heb je de contractie van de (sterkere) kamers.  Omdat moment gebeurd ook de relaxatie van de voorkamers. De grootte van de vector die de de constractie van de kamers voorsteld is echter groter dus deze valt niet op op de ECG. Tenslotte komt de T-top. Deze duidt op de relaxatie van de kamers.  Een voorbeeld golf en de naamgeving zijn onderaan in de afbeelding te vinden. 
 
 <img src="images/12.jpg">
 
