@@ -30,6 +30,5 @@ Een oplijsting van alle bestanden voor dit project.
 | `requirements.txt`       | Lijst van alle Python Libaries gebruikt in dit project       |
 | `webapp` + `api.py`      | Een webapplicatie de de JSON bestanden uit `output.py` gaat weergeven en hierrond grafieken genereert. (in progress) |
 | `output.py`              | Klasse gebruikt om de metrieken en de attributen te schrijven naar een JSON bestand. |
-| `zelfreflectie.pdf`      | De zelfreflectie bestand.                                    |
 | `ecg.csv`                | Een csv-bestand met alle features van de data.               |
 
